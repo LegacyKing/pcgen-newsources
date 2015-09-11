@@ -1,0 +1,148 @@
+# CVS $Revision: $ $Author: $ dschofield Wed Sep  9 21:03:22 2015 -- reformated by PCGen PrettyLST v6.04.01
+#Original Entry By: Aaron Divinsky
+
+###Block: Racial Synergy Language Bonuses
+# Ability Name							Category of Ability	Type			Visible	Stackable?	Multiple?	Choose		Bonus to skill rank
+Synergy Bonus (Speak Language (Danisil))			CATEGORY:Internal		TYPE:Internal	VISIBLE:NO								BONUS:SKILLRANK|Speak Language (Danisil)|1|TYPE=Synergy|PREVARLTEQ:skillinfo("TOTALRANK", "Speak Language (Danisil)"),1
+Synergy Bonus (Speak Language (Trader's Tongue))	CATEGORY:Internal		TYPE:Internal	VISIBLE:NO								BONUS:SKILLRANK|Speak Language (Trader's Tongue)|1|TYPE=Synergy|PREVARLTEQ:skillinfo("TOTALRANK", "Speak Language (Trader's Tongue)"),1
+Synergy Bonus (Speak Language (Halfling))			CATEGORY:Internal		TYPE:Internal	VISIBLE:NO								BONUS:SKILLRANK|Speak Language (Halfling)|1|TYPE=Synergy|PREVARLTEQ:skillinfo("TOTALRANK", "Speak Language (Halfling)"),1
+Synergy Bonus (Speak Language (Erenlander))		CATEGORY:Internal		TYPE:Internal	VISIBLE:NO	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILLRANK|Speak Language (Erenlander)|1|TYPE=Synergy|PREVARLTEQ:skillinfo("TOTALRANK", "Speak Language (Erenlander)"),2
+
+###Block: Racial Abilities: Dorn
+# Ability Name																Category of Ability		Type													Visible		Bonus to Situation																							Change Weapon Prof. Category						Class Skill						Source Page		Temporary Bonus
+Weapon Familiarity (Dorn)														CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DornRacialAbilities																																		CHANGEPROF:Sword (Bastard),Spear (Dornish Horse)=Martial
+Favored Region (Northlands)														CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.DornRacialAbilities		VISIBLE:YES		BONUS:SITUATION|Survival=In the Northlands region,Knowledge (Nature)=In the Northlands region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Northlands))=1											CSKILL:Knowledge (Local (Northlands))	SOURCEPAGE:36
++5 racial bonus on Fortitude saving throws against cold dangers and half damage from nonlethal cold damage	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DornRacialAbilities.SnowElfRacialAbilities	VISIBLE:EXPORT																																												SOURCEPAGE:36	TEMPBONUS:PC|SAVE|Fortitude|4|TYPE=Racial
++1 racial bonus on attack rolls when fighting in groups of five or more Dorns						CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DornRacialAbilities					VISIBLE:EXPORT																																												SOURCEPAGE:36	TEMPBONUS:PC|COMBAT|TOHIT|1|TYPE=Racial
++1 racial bonus on attack rolls when using a melee weapon two-handed.							CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DornRacialAbilities					VISIBLE:EXPORT																																												SOURCEPAGE:36	TEMPBONUS:PC|COMBAT|TOHIT|1|TYPE=Racial
+
+###Block: Racial Abilities: Sarcosan
+# Ability Name			Category of Ability		Type										Change Weapon Prof. Category
+Weapon Familiarity (Sarcosan)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.SarcosanRacialAbilities	CHANGEPROF:Lance (Sarcosan),Cedeku=Martial
+
+###Block: Racial Abilities: Sarcosan (Plains)
+# Ability Name				Category of Ability		Type													Visible		Description																								Bonus to Situation																										Class Skill							Source Page		Temporary Bonus
+Favored Region (Southern Erenland)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.SarcosanPlainsRacialAbilities	VISIBLE:YES																											BONUS:SITUATION|Survival=In the Southern Erenland region,Knowledge (Nature)=In the Southern Erenland region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Southern Erenland))=1	CSKILL:Knowledge (Local (Southern Erenland))	SOURCEPAGE:37
+Natural Horsemen				CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.SarcosanPlainsRacialAbilities			VISIBLE:EXPORT	DESC:Many Sarcosans ride as soon as they learn to walk, and someone of another race that rides well is said to “take to a horse like a Sarcosan.”	BONUS:SITUATION|Ride=Horse,Handle Animal=Horse,Concentration=Horse|4|TYPE=Racial																								SOURCEPAGE:37	TEMPBONUS:PC|COMBAT|DAMAGE.Melee|1|TYPE=Racial
+
+###Block: Racial Abilities: Sarcosan (Urban)
+# Ability Name			Category of Ability		Type													Visible		Bonus to Situation							Source Page
+Favored Region (Special)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.SarcosanUrbanRacialAbilities	VISIBLE:EXPORT	BONUS:SITUATION|Gather Information=In a City|2|TYPE=Racial	SOURCEPAGE:37
+
+###Block: Racial Abilities: Erenlander
+# Ability Name				Category of Ability		Type																										Visible		Bonus to Situation																										Stat bonus				Class Skill							Source Page
+Favored Region (Central Erenland)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.GnomeRacialAbilities.HalflingRacialAbilities.GnomeDwarrowRacialAbilities.HalflingElflingRacialAbilities	VISIBLE:YES		BONUS:SITUATION|Survival=In the Central Erenland region,Knowledge (Nature)=In the Central Erenland region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Central Erenland))=1						CSKILL:Knowledge (Local (Central Erenland))	SOURCEPAGE:38
++2 Str (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityIncrease																	VISIBLE:DISPLAY																														BONUS:STAT|STR|2|TYPE=Racial
++2 Dex (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityIncrease																	VISIBLE:DISPLAY																														BONUS:STAT|DEX|2|TYPE=Racial
++2 Con (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityIncrease																	VISIBLE:DISPLAY																														BONUS:STAT|CON|2|TYPE=Racial
++2 Int (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityIncrease																	VISIBLE:DISPLAY																														BONUS:STAT|INT|2|TYPE=Racial
++2 Wis (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityIncrease																	VISIBLE:DISPLAY																														BONUS:STAT|WIS|2|TYPE=Racial
++2 Cha (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityIncrease																	VISIBLE:DISPLAY																														BONUS:STAT|CHA|2|TYPE=Racial
+-2 Str (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityDecrease																	VISIBLE:DISPLAY																														BONUS:STAT|STR|-2|TYPE=Racial
+-2 Dex (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityDecrease																	VISIBLE:DISPLAY																														BONUS:STAT|DEX|-2|TYPE=Racial
+-2 Con (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityDecrease																	VISIBLE:DISPLAY																														BONUS:STAT|CON|-2|TYPE=Racial
+-2 Int (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityDecrease																	VISIBLE:DISPLAY																														BONUS:STAT|INT|-2|TYPE=Racial
+-2 Wis (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityDecrease																	VISIBLE:DISPLAY																														BONUS:STAT|WIS|-2|TYPE=Racial
+-2 Cha (Erenlander)			CATEGORY:Special Ability	TYPE:SpecialQuality.ErendlanderStatBonuses.AbilityDecrease																	VISIBLE:DISPLAY																														BONUS:STAT|CHA|-2|TYPE=Racial
+
+###Block: Racial Abilities: Dwarf
+# Ability Name						Category of Ability		Type																				Visible		Define					Description														Combat bonus						Bonus to Situation																											Modify VAR										Class Skill							Source Page		Temporary Bonus
+Favored Region (Kaladrun Mountains)			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.DwarfRacialAbilities.DwarfDwarrowRacialAbilities.DworgRacialAbilities	VISIBLE:EXPORT																														BONUS:SITUATION|Survival=In The Kaladrun Mountains region,Knowledge (Nature)=In The Kaladrun Mountains region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Kaladrun Mountains))=1												CSKILL:Knowledge (Local (Kaladrun Mountains))	SOURCEPAGE:39
+Resilient							CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarfRacialAbilities												VISIBLE:EXPORT							DESC:Dwarves are notoriously tough, both against external attacks and internal attacks.	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.REPLACE																																																		SOURCEPAGE:39	TEMPBONUS:PC|SAVE|ALL|2|TYPE=Racial
+Spell Resistant						CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarfRacialAbilities.OrcRacialAbilities.DworgRacialAbilities					VISIBLE:EXPORT	DEFINE:RacialSpellResistance|0	DESC:Dwarves (and Dwarven kin) are innately resistant to the power of magic.																																									BONUS:VAR|SpellEnergy|-2	BONUS:VAR|RacialSpellResistance|2									SOURCEPAGE:39	TEMPBONUS:PC|SAVE|ALL|RacialSpellResistance|TYPE=Racial
++1 racial bonus on attack rolls against orcs	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarfRacialAbilities												VISIBLE:EXPORT																																																																															SOURCEPAGE:39	TEMPBONUS:PC|COMBAT|TOHIT|1|TYPE=Racial
+
+###Block: Racial Abilities: Dwarf Clan
+# Ability Name						Category of Ability		Type															Visible		Define											Stackable?	Multiple?	Choose		Bonus to Situation																													Modify VAR																Source Page		Aspects									Temporary Bonus
+Favored Region (Subterranean Kaladruns)		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ClanDwarfRacialAbilities						VISIBLE:EXPORT																				BONUS:SITUATION|Survival=In the Subterranean Kaladruns sub-region,Knowledge (Nature)=In the Subterranean Kaladruns sub-region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Kaladrun Mountains))=1																		SOURCEPAGE:40
+Stonecunning						CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ClanDwarfRacialAbilities						VISIBLE:EXPORT	DEFINE:StonecunningSearchBonus|0	DEFINE:StonecunningSearchRange|0	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:SITUATION|Search=Notice unusual stonework|StonecunningSearchBonus|TYPE=Racial																			BONUS:VAR|StonecunningSearchRange|10|TYPE=Racial	BONUS:VAR|StonecunningSearchBonus|2|TYPE=Racial	SOURCEPAGE:40	ASPECT:Ability Search Range|%1 ft.|StonecunningSearchRange
+Stability							CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ClanDwarfRacialAbilities						VISIBLE:EXPORT																																																																					SOURCEPAGE:40	ASPECT:Ability Check Bonus|4
++1 dodge bonus to Armor Class against orcs	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ClanDwarfRacialAbilities.DwarfDwarrowRacialAbilities	VISIBLE:EXPORT																																																																					SOURCEPAGE:40											TEMPBONUS:PC|COMBAT|AC|1|TYPE=Dodge
+
+###Block: Racial Abilities: Kurgun Dwarf
+# Ability Name				Category of Ability		Type										Visible		Description																						Bonus to Situation																												Bonus to skill				Source Page
+Favored Region (Surface Kaladruns)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.KurgunDwarfRacialAbilities	VISIBLE:EXPORT																								BONUS:SITUATION|Survival=In the Surface Kaladruns sub-region,Knowledge (Nature)=In the Surface Kaladruns sub-region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Kaladrun Mountains))=1							SOURCEPAGE:40
+Natural Mountaineers			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.KurgunDwarfRacialAbilities	VISIBLE:EXPORT	DESC:May ignore difficult mountainous terrain that hampers movement	DESC:These mountain fey are natural climbers and scramblers.																																BONUS:SKILL|Climb|2|TYPE=Racial	SOURCEPAGE:40
+
+###Block: Racial Abilities: Elf
+# Ability Name										Category of Ability		Type											Visible		Bonus to Situation																					Class Skill					Source Page		Temporary Bonus
+Favored Region (Erethor)								CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.ElfRacialAbilities	VISIBLE:EXPORT	BONUS:SITUATION|Survival=In the Erethor region,Knowledge (Nature)=In the Erethor region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Erethor))=1	CSKILL:Knowledge (Local (Erethor))	SOURCEPAGE:41
++2 racial saving throw bonus against Enchantment spells or Effects	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ElfRacialAbilities			VISIBLE:EXPORT																															SOURCEPAGE:41	TEMPBONUS:PC|SAVE|ALL|2|TYPE=Racial
++4 racial bonus on Climb and Balance checks when climbing trees		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ElfRacialAbilities			VISIBLE:EXPORT	BONUS:SITUATION|Climb=When in trees,Balance=When in trees|4|TYPE=Racial																			SOURCEPAGE:41
+
+###Block: Racial Abilities: Elf (Wood)
+# Ability Name			Category of Ability		Type												Visible		Bonus to Situation																							Source Page
+Favored Region (Caraheen)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.WoodElfRacialAbilities	VISIBLE:EXPORT	BONUS:SITUATION|Survival=In the Caraheen sub-region,Knowledge (Nature)=In the Caraheen sub-region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Erethor))=1	SOURCEPAGE:41
+
+###Block: Racial Abilities: Elf (Jungle)
+# Ability Name		Category of Ability		Type																				Visible		Description																			Bonus to Situation																						Bonus to skill						Source Page		Temporary Bonus
+Favored Region (Aruun)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.JungleElfRacialAbilities.ElfElflingRacialAbilities				VISIBLE:EXPORT																					BONUS:SITUATION|Survival=In the Aruun sub-region,Knowledge (Nature)=In the Aruun sub-region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Erethor))=1									SOURCEPAGE:42
+Feral Elves			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.JungleElfRacialAbilities											VISIBLE:EXPORT	DESC:Jungle elves are even more attuned to their surroundings than other elves.							BONUS:SITUATION|Climb=When in trees,Balance=When in trees|4|TYPE=Racial														BONUS:SKILL|Listen,Search,Spot|2|TYPE=Racial	SOURCEPAGE:42	TEMPBONUS:PC|SKILL|Survival,Knowledge (Nature)|2|TYPE=Racial
+Spirit Foes			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.JungleElfRacialAbilities	TYPE:RacialTraits.SpecialQuality.JungleElfRacialAbilities	VISIBLE:EXPORT	DESC:Jungle elves cling to survival only by learning to evade the many malevolent spirits that plague their homeland.																																		SOURCEPAGE:42	TEMPBONUS:PC|SKILL|Hide,Move Silently|4,PC|SAVE|ALL|2|TYPE=Racial
+Herbalists			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.JungleElfRacialAbilities.ElfElflingRacialAbilities							VISIBLE:EXPORT	DESC:May begin play with up to 10 doses of orcbane poison (at one-quarter normal cost)																																							SOURCEPAGE:42
+
+###Block: Racial Abilities: Elf (Snow)
+# Ability Name			Category of Ability		Type												Visible		Bonus to Situation																							Source Page
+Favored Region (Varadeen)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.SnowElfRacialAbilities	VISIBLE:EXPORT	BONUS:SITUATION|Survival=In the Varadeen sub-region,Knowledge (Nature)=In the Varadeen sub-region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Erethor))=1	SOURCEPAGE:43
+
+###Block: Racial Abilities: Elf (Sea)
+# Ability Name			Category of Ability		Type												Visible		Define				Clone Movement		Bonus to Situation																							Bonus to skill				Modify VAR					Source Page		Aspects
+Favored Region (Miraleen)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.SeaElfRacialAbilities	VISIBLE:EXPORT										BONUS:SITUATION|Survival=In the Miraleen sub-region,Knowledge (Nature)=In the Miraleen sub-region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Erethor))=1													SOURCEPAGE:44
+Natural Swimmers			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.SeaElfRacialAbilities			VISIBLE:EXPORT	DEFINE:DeepLungsMultiplier|0	MOVECLONE:Walk,Swim,/2																											BONUS:SKILL|Swim|8|TYPE=Racial	BONUS:VAR|DeepLungsMultiplier|6	SOURCEPAGE:44	ASPECT:Hold Breath Duration|%1 Rounds|DeepLungsMultiplier*CON
+Natural Sailors			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.SeaElfRacialAbilities			VISIBLE:EXPORT										BONUS:SITUATION|TYPE.Craft=When At Sea,TYPE.Profession=When At Sea,Use Rope=When At Sea|2|TYPE=Racial																						SOURCEPAGE:44
+
+###Block: Racial Abilities: Gnome
+# Ability Name		Category of Ability		Type									Visible		Description																	Clone Movement		Bonus to Situation																																											Bonus to skill														Source Page		Temporary Bonus
+Dwarven Kin (Gnome)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.GnomeRacialAbilities	VISIBLE:EXPORT																																																																																					SOURCEPAGE:45	TEMPBONUS:PC|SAVE|ALL|2|TYPE=Racial
+Natural Riverfolk		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.GnomeRacialAbilities	VISIBLE:EXPORT	DESC:Life on the river requires you to know when to work and when to play, when to sail and when to swim.	MOVECLONE:Walk,Swim,/2																																															BONUS:SKILL|Swim,TYPE=Perform,Profession (Boater),Profession (Sailor),Use Rope|2|TYPE=Racial	SOURCEPAGE:45
+Natural Traders (Gnome)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.GnomeRacialAbilities	VISIBLE:EXPORT	DESC:For gnomes, mercantilism and smuggling are not just trades, they are lifestyles.								BONUS:SITUATION|Appraise=Trading,Bluff=Trading,Diplomacy=Trading,Forgery=Trading,Gather Information=Trading,TYPE.Profession=Trading,Appraise=Smuggling,Bluff=Smuggling,Diplomacy=Smuggling,Forgery=Smuggling,Gather Information=Smuggling,TYPE.Profession=Smuggling|4|TYPE=Racial																	SOURCEPAGE:45
+
+###Block: Racial Abilities: Halfling
+# Ability Name							Category of Ability		Type										Visible		Description											Source Page		Temporary Bonus
++2 racial bonus on saving throws against fear effects	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.HalflingRacialAbilities	VISIBLE:EXPORT	DESC:Curiosity and fearlessness are halfling traits in equal measure.	SOURCEPAGE:46	TEMPBONUS:PC|SAVE|ALL|2|TYPE=Racial
+
+###Block: Racial Abilities: Nomadic Halfling
+# Ability Name						Category of Ability		Type											Visible		Add 							Bonus to Situation											Source Page
+Skilled Riders						CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.NomadicHalflingRacialAbilities	VISIBLE:EXPORT								BONUS:SITUATION|Ride=Wogren,Handle Animal=Wogren,Concentration=Wogren|TYPE=Racial	SOURCEPAGE:46
+Bound to the Spirits or Bound to the Beasts	CATEGORY:Special Ability	TYPE:RacialTraits.Internal.NomadicHalflingRacialAbilities		VISIBLE:NO		ADD:FEAT|1|TYPE.Magecraft,Mounted Combat															SOURCEPAGE:46
+
+###Block: Racial Abilities: Agrarian Halfling
+# Ability Name			Category of Ability		Type													Visible		Auto Feat				Add 										Bonus to Situation								Bonus to skill				Source Page
+Dexterous Hands			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.AgrarianHalflingRacialAbilities			VISIBLE:EXPORT																BONUS:SITUATION|TYPE.Craft=Non-metal or Non-wood|2|TYPE=Racial	BONUS:SKILL|Heal|2|TYPE=Racial	SOURCEPAGE:46
+Stout or Studious			CATEGORY:Special Ability	TYPE:RacialTraits.Internal.AgrarianHalflingRacialAbilities				VISIBLE:NO							ADD:ABILITY|1|Special Ability|NORMAL|TYPE=StoutOrStudious																		SOURCEPAGE:46
+Stout or Studious (Stout)	CATEGORY:Special Ability	TYPE:RacialTraits.Internal.AgrarianHalflingRacialAbilities.StoutOrStudious	VISIBLE:NO		AUTO:FEAT|Toughness|Endurance																												SOURCEPAGE:46
+Stout or Studious (Studious)	CATEGORY:Special Ability	TYPE:RacialTraits.Internal.AgrarianHalflingRacialAbilities.StoutOrStudious	VISIBLE:NO							ADD:FEAT|1|TYPE.Magecraft																							SOURCEPAGE:46
+
+###Block: Racial Abilities: Orc
+# Ability Name																	Category of Ability		Type											Visible		Bonus to Situation																										Class Skill							Source Page		Temporary Bonus
+Favored Region (Northern Marches)														CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.FavoredRegion.OrcRacialAbilities	VISIBLE:EXPORT	BONUS:SITUATION|Survival=In the Northern Marches region,Knowledge (Nature)=In the Northern Marches region|2|TYPE=Racial|PRESKILL:1,Knowledge (Local (Northern Marches))=1	CSKILL:Knowledge (Local (Northern Marches))	SOURCEPAGE:48
++1 racial bonus on attack rolls against Dwarves												CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.OrcRacialAbilities			VISIBLE:EXPORT																																						SOURCEPAGE:48	TEMPBONUS:PC|COMBAT|TOHIT|1|TYPE=Racial
++1 racial bonus to attack rolls when fighting in groups of 10 or more orcs whether they are enemies or allies	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.OrcRacialAbilities			VISIBLE:EXPORT																																						SOURCEPAGE:48	TEMPBONUS:PC|COMBAT|TOHIT|1|TYPE=Racial
+Immune to nonlethal Cold Damage. Half Damage from Lethal										CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.OrcRacialAbilities			VISIBLE:EXPORT																																						SOURCEPAGE:48
+Nightfighting																	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.OrcRacialAbilities			VISIBLE:EXPORT																																						SOURCEPAGE:48	TEMPBONUS:PC|COMBAT|TOHIT|1|TYPE=Racial
+Light Sensitivity																	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.OrcRacialAbilities			VISIBLE:EXPORT																																						SOURCEPAGE:48	TEMPBONUS:PC|COMBAT|TOHIT|-1|TYPE=Racial
+
+###Block: Racial Abilities: Dwarrow
+# Ability Name			Category of Ability		Type										Visible		Description														Combat bonus						Source Page		Temporary Bonus
+Dwarven Kin (Dwarrow)		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarrowRacialAbilities	VISIBLE:EXPORT																BONUS:COMBAT|AC|1|TYPE=NaturalArmor.REPLACE	SOURCEPAGE:48	TEMPBONUS:PC|SAVE|ALL|2|TYPE=Racial
+Spell Resistant (Dwarrow)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarrowRacialAbilities	VISIBLE:EXPORT																								SOURCEPAGE:48	TEMPBONUS:PC|SAVE|ALL|2|TYPE=Racial
+Dwarf and Gnome Blood		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarrowRacialAbilities	VISIBLE:EXPORT	DESC:For all special abilities and effects, dwarrow are considered dwarves and gnomes.									SOURCEPAGE:48
+
+###Block: Racial Abilities: Dwarrow (Raised By Gnomes)
+# Ability Name			Category of Ability		Type											Visible		Description																										Bonus to Situation																																											Source Page
+Natural Traders (Dwarrow)	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.GnomeDwarrowRacialAbilities	VISIBLE:EXPORT	DESC:While not as outgoing or adept as their gnome kin, dwarrow that grow up on the river learn a good deal about making deals and manipulating information.	BONUS:SITUATION|Appraise=Trading,Bluff=Trading,Diplomacy=Trading,Forgery=Trading,Gather Information=Trading,TYPE.Profession=Trading,Appraise=Smuggling,Bluff=Smuggling,Diplomacy=Smuggling,Forgery=Smuggling,Gather Information=Smuggling,TYPE.Profession=Smuggling|2|TYPE=Racial	SOURCEPAGE:48
+
+###Block: Racial Abilities: Dwarrow (Raised By Dwarves)
+# Ability Name													Category of Ability		Type											Visible		Add 												Bonus to Situation											Source Page
+Clan or Kurgan													CATEGORY:Special Ability	TYPE:RacialTraits.Internal.DwarfDwarrowRacialAbilities		VISIBLE:NO		ADD:ABILITY|Special Ability|NORMAL|Stonecunning,Natural Mountaineers															SOURCEPAGE:49
++2 racial bonus on Appraise and Craft checks that are related to stone or metal items	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DwarfDwarrowRacialAbilities	VISIBLE:EXPORT													BONUS:SITUATION|Appraise=Stone or Metal,TYPE.Craft=Stone or Metal|2|TYPE=Racial	SOURCEPAGE:49
+
+###Block: Racial Abilites: Dworg
+# Ability Name								Category of Ability		Type									Visible		Description													Source Page		Temporary Bonus
++2 racial bonus on attack rolls against orcs and their kind	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DworgRacialAbilities	VISIBLE:EXPORT															SOURCEPAGE:49	TEMPBONUS:PC|COMBAT|TOHIT|2|TYPE=Racial
+Minor Light Sensitivity							CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DworgRacialAbilities	VISIBLE:EXPORT															SOURCEPAGE:49	TEMPBONUS:PC|COMBAT|TOHIT|-1|TYPE=Racial
+Dwarf and Orc Blood							CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.DworgRacialAbilities	VISIBLE:EXPORT	DESC:For all special abilities and effects, dworgs are considered dwarves and orcs	SOURCEPAGE:49
+
+###Block: Racial Abilities: Elfling
+# Ability Name		Category of Ability		Type										Visible		Description														Source Page
+Elf and Halfling Blood	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.ElflingRacialAbilities	VISIBLE:EXPORT	DESC:For all special abilities and effects, elflings are considered elves and halflings	SOURCEPAGE:49

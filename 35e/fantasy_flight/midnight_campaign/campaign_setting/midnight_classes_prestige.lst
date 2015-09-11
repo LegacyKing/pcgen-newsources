@@ -1,0 +1,310 @@
+# CVS $Revision: $ $Author: $ dschofield Wed Sep  9 21:03:22 2015 -- reformated by PCGen PrettyLST v6.04.01
+# Original Entry by: Aaron Divinsky
+
+# Class Name		Visible
+CLASS:Arcane Archer.MOD	VISIBLE:NO
+
+# Class Name			Visible
+CLASS:Arcane Trickster.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Archmage.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Assassin.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Blackguard.MOD	VISIBLE:NO
+
+# Class Name			Visible
+CLASS:Dragon Disciple.MOD	VISIBLE:NO
+
+# Class Name	Visible
+CLASS:Duelist.MOD	VISIBLE:NO
+
+# Class Name			Visible
+CLASS:Dwarven Defender.MOD	VISIBLE:NO
+
+# Class Name			Visible
+CLASS:Eldritch Knight.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Hierophant.MOD	VISIBLE:NO
+
+# Class Name			Visible
+CLASS:Horizon Walker.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Loremaster.MOD	VISIBLE:NO
+
+# Class Name			Visible
+CLASS:Mystic Theurge.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Shadowdancer.MOD	VISIBLE:NO
+
+# Class Name		Visible
+CLASS:Thaumaturgist.MOD	VISIBLE:NO
+
+# Class Name			Output Name					Hit Dice	Type			Max Level	Define					Combat bonus					Save bonus												Modify VAR
+CLASS:Ancestral Bladebearer	OUTPUTNAME:Ancestral Bladebearer	HD:10		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:AncestralBladebearerLvl|0	BONUS:COMBAT|BASEAB|CL|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude|CL/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|CL/3	BONUS:VAR|AncestralBladebearerLvl|CL
+# Class Name			Req. Equipement				Required Feat						Var. Min. Value
+CLASS:Ancestral Bladebearer	PREEQUIP:1,TYPE=Weapon.Covenant	PREFEAT:2,Weapon Specialization,Weapon Focus	PREVARGTEQ:BAB,6
+# Class Name			Skill Pts/Lvl		Class Skill
+CLASS:Ancestral Bladebearer	STARTSKILLPTS:2+INT	CSKILL:Climb|TYPE.Craft|Handle Animal|Intimidate|Jump|TYPE.Profession|Ride|Swim
+# Class Name			Spell Stat Bonus		Spell Type		Spellbook		Caster level						Use Spell List
+CLASS:Ancestral Bladebearer	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Ancestral Bladebearer|TL	SPELLLIST:1|Channeler
+###Block: Weapon and Armor Proficiencies
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																													DEFINE:CovenantPrimaryWeaponAbilityCount|0	ABILITY:Special Ability|AUTOMATIC|Ancestral Bladebearer Weapon and Armor Proficiency
+1																																					ABILITY:Special Ability|AUTOMATIC|Unbreakable Blade|PREEQUIP:1,TYPE=Weapon.Covenant
+2																																					ABILITY:Special Ability|AUTOMATIC|Advance Ancestral Blade|PREEQUIP:1,TYPE=Weapon.Covenant
+3																							BONUS:ABILITYPOOL|FEAT|Fighter Feat									ABILITY:Special Ability|AUTOMATIC|Ancestral Watcher|PREEQUIP:1,TYPE=Weapon.Covenant
+4																																					ABILITY:Special Ability|AUTOMATIC|Immovable Blade|PREEQUIP:1,TYPE=Weapon.Covenant
+5																																					ABILITY:Special Ability|AUTOMATIC|Ancestral Advisor|PREEQUIP:1,TYPE=Weapon.Covenant
+6																							BONUS:ABILITYPOOL|FEAT|Fighter Feat									ABILITY:Special Ability|AUTOMATIC|Ancestral Guide|PREEQUIP:1,TYPE=Weapon.Covenant
+7																																					ABILITY:Special Ability|AUTOMATIC|Advance Ancestral Blade|PREEQUIP:1,TYPE=Weapon.Covenant
+8																																					ABILITY:Special Ability|AUTOMATIC|Unwavering Blade|PREEQUIP:1,TYPE=Weapon.Covenant
+9																							BONUS:ABILITYPOOL|FEAT|Fighter Feat									ABILITY:Special Ability|AUTOMATIC|Ancestral Protector|PREEQUIP:1,TYPE=Weapon.Covenant
+10																																					ABILITY:Special Ability|AUTOMATIC|Awaken Ancestral Blade|PREEQUIP:1,TYPE=Weapon.Covenant
+
+# Class Name		Output Name			Hit Dice	Type			Max Level	Define			Combat bonus								Save bonus												Modify VAR
+CLASS:Aradil's Eye	OUTPUTNAME:Aradil's Eye	HD:6		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:AradilsEyeLvl|0	BONUS:COMBAT|BASEAB|CL/2+(CL>=3)+(CL>=7)|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:SAVE|BASE.Will|CL/2+2	BONUS:VAR|AradilsEyeLvl|CL
+# Class Name		Required Feat		Required Race			Required Skill
+CLASS:Aradil's Eye	PREFEAT:1,Inconspicuous	PRERACE:1,Elf (Wood/Midnight)	PRESKILL:7,Bluff=8,Disguise=5,Gather Information=8,Hide=8,Move Silently=5,Sense Motive=5,Spot=5
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Aradil's Eye	STARTSKILLPTS:8+INT	CSKILL:Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Listen|Move Silently|Open Lock|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Survival|Swim|Tumble|Use Rope
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Aradil's Eye	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Aradil's Eye|TL	SPELLLIST:1|Channeler
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							ABILITY:Special Ability|AUTOMATIC|Alter Ego (1st)|Mindbond
+2																							ABILITY:Special Ability|AUTOMATIC|Spy Initiate
+3																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Alter Ego (1st)|Alter Ego (2nd)
+4																							ABILITY:Special Ability|AUTOMATIC|Closed Mind
+5																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Alter Ego (2nd)|Alter Ego (Quick Change)|.CLEAR.Spy Initiate|Spy
+6																							ABILITY:Special Ability|AUTOMATIC|Hide In Plain Sight (Aradil's Eye)
+7																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Alter Ego (Quick Change)|Alter Ego (Thousand Forms)|Slippery Mind (Wildlander)
+8																							ABILITY:Special Ability|AUTOMATIC|Undetectable Alignment
+9																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Alter Ego (Thousand Forms)|Alter Ego (Nonmagical)
+10																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Spy|Master Spy
+
+# Class Name		Output Name				Hit Dice	Type			Max Level	Define				Combat bonus								Save bonus												Modify VAR
+CLASS:Avenging Knife	OUTPUTNAME:Avenging Knife	HD:6		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:AvengingKnifeLvl|0	BONUS:COMBAT|BASEAB|CL/2+(CL>=3)+(CL>=7)|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Will|(CL+1)/3	BONUS:SAVE|BASE.Reflex|CL/2+2	BONUS:VAR|AvengingKnifeLvl|CL
+# Class Name		Required Ability							Restricted AL		Required Feat						Required Skill									Required Text
+CLASS:Avenging Knife	PREABILITY:1,CATEGORY=Special Ability,Sneak Attack	!PREALIGN:LE,NE,CE	PREFEAT:2,Inconspicuous,Improved Initiative	PRESKILL:4,Bluff=5,Gather Information=5,Hide=8,Move Silently=8	PRETEXT:Must have performed some heroic feat against the forces of Izrador; this feat must be passed along by word of mouth to reach the ears of a member of the Circle of Skulls.
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Avenging Knife	STARTSKILLPTS:6+INT	CSKILL:Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Listen|Move Silently|Open Lock|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Survival|Swim|Tumble|Use Rope
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Avenging Knife	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Avenging Knife|TL	SPELLLIST:1|Channeler
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																													ABILITY:Special Ability|AUTOMATIC|The Drop
+2																													ABILITY:Special Ability|AUTOMATIC|Security Breach
+3																							BONUS:VAR|SneakAttackDice|CL/3
+4																													ABILITY:Special Ability|AUTOMATIC|Target Study
+5																													ABILITY:Special Ability|AUTOMATIC|Fast Hands
+6																													ABILITY:Special Ability|AUTOMATIC|Cover Story
+7																													ABILITY:Special Ability|AUTOMATIC|Stunning Sneak Attack
+8																													ABILITY:Special Ability|AUTOMATIC|Improved Coup de Grace
+9																													ABILITY:Special Ability|AUTOMATIC|Still as Stone
+10																													ABILITY:Special Ability|AUTOMATIC|Death Attack
+
+# Class Name		Hit Dice	Type			Max Level	Base class as subclass?	Define				Combat bonus						Save bonus												Modify VAR
+CLASS:Bane of Legates	HD:6		TYPE:PC.Prestige	MAXLEVEL:10	ALLOWBASECLASS:YES	DEFINE:BaneOfLegatesLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:SAVE|BASE.Will|CL/2+2	BONUS:VAR|BaneOfLegatesLvl|CL
+# Class Name		Required Skill										Var. Min. Value
+CLASS:Bane of Legates	PRESKILL:3,Knowledge (Arcana)=13,Knowledge (Shadow)=8,Spellcraft=10	PREVARGTEQ:SpellEnergy,10
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Bane of Legates	STARTSKILLPTS:4+INT	CSKILL:Bluff|Concentration|TYPE.Craft|Diplomacy|Handle Animal|Heal|Intimidate|TYPE.Knowledge|TYPE.Profession|Sense Motive|Spellcraft
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level					Use Spell List
+CLASS:Bane of Legates	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Bane of Legates|TL	SPELLLIST:1|Channeler
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							BONUS:ABILITYPOOL|Spell Pool|CL		BONUS:VAR|SpellEnergy|CL	BONUS:VAR|SpellcasterLvl|CL	ABILITY:Special Ability|AUTOMATIC|Resist Izrador's Will
+2																							BONUS:ABILITYPOOL|Bane of Legates Feat|1
+3																																								ABILITY:Special Ability|AUTOMATIC|See Astirax
+4																																								ABILITY:Special Ability|AUTOMATIC|Counter Izrador’s Will
+5																							BONUS:ABILITYPOOL|Spellcasting Feat|1
+6																																								ABILITY:Special Ability|AUTOMATIC|Bind Astirax
+7																							BONUS:ABILITYPOOL|Bane of Legates Feat|1
+8																																								ABILITY:Special Ability|AUTOMATIC|Conceal Magic
+9																							BONUS:ABILITYPOOL|Spellcasting Feat|1
+10																																								ABILITY:Special Ability|AUTOMATIC|Sundered Spirit
+
+# Class Name		Output Name		Hit Dice	Type			Max Level	Define				Combat bonus						Save bonus														Modify VAR
+CLASS:Druid (Midnight)	OUTPUTNAME:Druid	HD:8		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:DruidMidnightLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Reflex,BASE.Will|CL/3	BONUS:SAVE|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:VAR|DruidMidnightLvl|CL
+# Class Name		Required Ability														Required Feat									Required Skill
+CLASS:Druid (Midnight)	PREABILITY:1,CATEGORY=Special Ability,Master of Two Worlds (Mastery of Nature),Wild Empathy	PREFEAT:1,Magecraft (Spiritual)	PREFEAT:2,TYPE.Spellcasting	PRESKILL:2,Knowledge (Nature)=8,Survival=8
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Druid (Midnight)	STARTSKILLPTS:4+INT	CSKILL:Concentration|TYPE.Craft|Handle Animal|Heal|Knowledge (Arcana)|Knowledge (Geography)|Knowledge (Nature)|Knowledge (Spirits)|TYPE.Profession|Spellcraft|Survival|Swim
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level					Use Spell List
+CLASS:Druid (Midnight)	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Druid (Midnight)|TL	SPELLLIST:1|Channeler
+# Druids and Channeler stack for the bonus spells thing.
+# Master of two worlds - Druid levels stack w/Channeler Spiritual
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																																																			ABILITY:Special Ability|AUTOMATIC|Druid Weapon and Armor Proficiency
+1																							BONUS:ABILITYPOOL|Spell Pool|CL				BONUS:VAR|SpellEnergy|CL	BONUS:VAR|SpellcasterLvl|CL
+1																							BONUS:ABILITYPOOL|Druid Animal Companion|((CL-1)/3)+1
+1																																BONUS:VAR|RebukeLevelPlant|CL|PREABILITY:1,CATEGORY=Special Ability,Master of Two Worlds (Mastery of Nature)	ABILITY:Special Ability|AUTOMATIC|Mastery of Nature|!PREABILITY:1,CATEGORY=Special Ability,Master of Two Worlds (Mastery of Nature)
+2																																																			ABILITY:Special Ability|AUTOMATIC|Druid ~ Nature Sense
+3																																																																									SPELLS:Innate|TIMES=CL/3|CASTERLEVEL=CL|Commune with Nature
+5																							BONUS:ABILITYPOOL|Druid Find the Way|1
+8																																																			ABILITY:Special Ability|AUTOMATIC|Immune to Poisons
+
+# Class Name		Hit Dice	Type			Max Level	Define			Combat bonus					Save bonus												Modify VAR
+CLASS:Elven Raider	HD:8		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:ElvenRaiderLvl|0	BONUS:COMBAT|BASEAB|CL|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Reflex|CL/2+2	BONUS:SAVE|BASE.Fortitude,BASE.Will|(CL+1)/3	BONUS:VAR|ElvenRaiderLvl|CL
+# Class Name		Required Feat																Required Race	Required Skill						Var. Min. Value
+CLASS:Elven Raider	PREFEAT:1,Weapon Focus(Longbow),Weapon Focus(Longbow (Icewood))	PREFEAT:2,Point Blank Shot,Rapid Shot	PRERACE:1,Elf%	PRESKILL:3,Hide=8,Move Silently=8,Survival=8	PREVARGTEQ:BAB,5
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Elven Raider	STARTSKILLPTS:4+INT	CSKILL:Balance|Climb|TYPE.Craft|Heal|Hide|Intimidate|Jump|Listen|Move Silently|TYPE.Profession|Ride|Search|Spot|Survival|Swim|Use Rope
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Elven Raider	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Elven Raider|TL	SPELLLIST:1|Channeler
+###Block: Weapon and Armor Proficiencies
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							ABILITY:Special Ability|AUTOMATIC|Elven Raider Weapon and Armor Proficiency
+1																							ABILITY:Special Ability|AUTOMATIC|Ranged Sneak Attack
+3																							ABILITY:Special Ability|AUTOMATIC|Meticulous Aim
+4																							ABILITY:Special Ability|AUTOMATIC|Intimidating Shot
+6																							ABILITY:Special Ability|AUTOMATIC|Leaf Reader
+7																							ABILITY:Special Ability|AUTOMATIC|Disarming Shot
+9																							ABILITY:Special Ability|AUTOMATIC|Close Combat Archery
+
+# Class Name	Hit Dice	Type			Max Level	Define			Combat bonus					Save bonus												Modify VAR
+CLASS:Freerider	HD:10		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:FreeriderLvl|0	BONUS:COMBAT|BASEAB|CL|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude|CL/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|(CL+1)/3	BONUS:VAR|FreeriderLvl|CL
+# Class Name	Required Feat								Required Race						Required Skill						Var. Min. Value
+CLASS:Freerider	PREFEAT:3,Mounted Combat,Ride-By Attack,Spirited Charge	PRERACE:1,Human (Sarcosan),Human (Erenlander)	PRESKILL:3,Handle Animal=4,Ride=8,Survival=4	PREVARGTEQ:BAB,6
+# Class Name	Skill Pts/Lvl		Class Skill
+CLASS:Freerider	STARTSKILLPTS:2+INT	CSKILL:Climb|TYPE.Craft|Diplomacy|Handle Animal|Jump|TYPE.Profession|Ride|Spot|Survival|Swim
+# Class Name	Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Freerider	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Freerider|TL	SPELLLIST:1|Channeler
+###Block: Weapon and Armor Proficiencies
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																																																																																					ABILITY:Special Ability|AUTOMATIC|Freerider Weapon and Armor Proficiency
+1																																BONUS:SITUATION|Handle Animal=Horse|1|TYPE=Circumstance
+1																																																																																					ABILITY:Special Ability|AUTOMATIC|Special Mount
+2																							BONUS:ABILITYPOOL|Freerider Mounted Maneuver|(CL+1)/3
+3																																										ADD:FEAT|1|Mounted Archery,Sarcosan Pureblood,Skill Focus (Ride),Trample,Weapon Focus (Lance (Sarcosan)),Weapon Focus (Scimitar),Weapon Focus (Longbow),Weapon Specialization (Lance (Sarcosan)),Weapon Specialization (Scimitar),Weapon Specialization (Longbow)
+4																																																																																					ABILITY:Special Ability|AUTOMATIC|Spur On
+6																																										ADD:FEAT|1|Mounted Archery,Sarcosan Pureblood,Skill Focus (Ride),Trample,Weapon Focus (Lance (Sarcosan)),Weapon Focus (Scimitar),Weapon Focus (Longbow),Weapon Specialization (Lance (Sarcosan)),Weapon Specialization (Scimitar),Weapon Specialization (Longbow)
+7																							BONUS:ABILITYPOOL|Freerider Devastating Attack|1
+9																																										ADD:FEAT|1|Mounted Archery,Sarcosan Pureblood,Skill Focus (Ride),Trample,Weapon Focus (Lance (Sarcosan)),Weapon Focus (Scimitar),Weapon Focus (Longbow),Weapon Specialization (Lance (Sarcosan)),Weapon Specialization (Scimitar),Weapon Specialization (Longbow)
+10																																																																																					ABILITY:Special Ability|AUTOMATIC|Sweeping Strike
+
+# Class Name	Hit Dice	Type			Max Level	Base class as subclass?	Define			Combat bonus						Save bonus												Modify VAR
+CLASS:Haunted One	HD:6		TYPE:PC.Prestige	MAXLEVEL:10	ALLOWBASECLASS:YES	DEFINE:HauntedOneLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:SAVE|BASE.Will|CL/2+2	BONUS:VAR|HauntedOneLvl|CL
+# Class Name	Required Feat														Required Skill
+CLASS:Haunted One	PREFEAT:1,TYPE.Magecraft	PREFEAT:2,Spellcasting (Divination),Spellcasting (Necromancy)	PRESKILL:2,Knowledge (Arcana)=8,Knowledge (Spirits)=10
+# Class Name	Skill Pts/Lvl		Class Skill
+CLASS:Haunted One	STARTSKILLPTS:2+INT	CSKILL:Bluff|Concentration|TYPE.Craft|Diplomacy|Handle Animal|Heal|Intimidate|TYPE.Knowledge|TYPE.Profession|Sense Motive|Spellcraft
+# Class Name	Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Haunted One	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Haunted One|TL	SPELLLIST:1|Channeler
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							BONUS:ABILITYPOOL|Spell Pool|CL			BONUS:VAR|SpellEnergy|CL	BONUS:VAR|SpellcasterLvl|CL	ABILITY:Special Ability|AUTOMATIC|Seance
+2																							BONUS:ABILITYPOOL|Spirit Manipulation|CL/2											ABILITY:Special Ability|AUTOMATIC|SpiritCraft
+3																																									ABILITY:Special Ability|AUTOMATIC|Ghost Sight
+5																							BONUS:ABILITYPOOL|Haunted One Spell Focus|1
+9																							BONUS:ABILITYPOOL|Haunted One Spell Focus|1
+
+# Class Name		Hit Dice	Type			Max Level	Define				Combat bonus						Save bonus											Modify VAR
+CLASS:Insurgent Spy	HD:6		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:InsurgentSpyLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Will|CL/3	BONUS:SAVE|BASE.Reflex|CL/2+2	BONUS:VAR|InsurgentSpyLvl|CL
+# Class Name		Required Feat		Required Skill										Required Text
+CLASS:Insurgent Spy	PREFEAT:1,Inconspicuous	PRESKILL:4,Bluff=8,Diplomacy=5,Gather Information=8,Sense Motive=5	PRETEXT:The character must have contacts within the armies of the Night Kings, whether on a local or greater scale. Even good relations with a local captain and some of his guards is sufficient to satisfy this requirement.
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Insurgent Spy	STARTSKILLPTS:8+INT	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Shadow)|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Magic Device|Use Rope
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Insurgent Spy	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Insurgent Spy|TL	SPELLLIST:1|Channeler
+###Block: Normal Level Progression
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							ABILITY:Special Ability|AUTOMATIC|Conceal Magic|Shadow Contacts (Minor)
+2																							ABILITY:Special Ability|AUTOMATIC|Shadow Speak
+3																							ABILITY:Special Ability|AUTOMATIC|Sneak Attack (Insurgent Spy)|.CLEAR.Shadow Contacts (Minor)|Shadow Contacts (Major)
+5																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Shadow Contacts (Major)|Shadow Contacts (Incredible)
+
+# Class Name	Hit Dice	Type			Max Level	Define			Combat bonus						Save bonus											Modify VAR
+CLASS:Smuggler	HD:6		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:SmugglerLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Will|CL/3	BONUS:SAVE|BASE.Reflex|CL/2+2	BONUS:VAR|SmugglerLvl|CL
+# Class Name	Required Feat			Required Skill
+CLASS:Smuggler	PREFEAT:1,Friendly Agent	PRESKILL:4,Bluff=8,Forgery=5,Gather Information=8,Hide=5
+# Class Name	Skill Pts/Lvl		Class Skill
+CLASS:Smuggler	STARTSKILLPTS:8+INT	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Jump|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Magic Device|Use Rope
+# Class Name	Spell Stat Bonus		Spell Type		Spellbook		Caster level			Use Spell List
+CLASS:Smuggler	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Smuggler|TL	SPELLLIST:1|Channeler
+###Block: Normal Level Progression
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							ABILITY:Special Ability|AUTOMATIC|Smuggler's Trade
+2																							ABILITY:Special Ability|AUTOMATIC|Dominant Will
+3																							ABILITY:Special Ability|AUTOMATIC|Mystifying Speech
+4																							ABILITY:Special Ability|AUTOMATIC|Information Network
+5																							ABILITY:Special Ability|AUTOMATIC|Disguise Contraband
+10																							ABILITY:Special Ability|AUTOMATIC|.CLEAR.Disguise Contrabnad|Disguise Contraband (Improved)|Slippery Mind (Smuggler)
+
+# Class Name		Output Name				Hit Dice	Type			Max Level	Define				Combat bonus					Save bonus												Modify VAR
+CLASS:Warrior Arcanist	OUTPUTNAME:Warrior Arcanist	HD:8		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:WarriorArcanistLvl|0	BONUS:COMBAT|BASEAB|CL|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude|CL/2+2	BONUS:SAVE|BASE.Reflex,BASE.Will|CL/3	BONUS:VAR|WarriorArcanistLvl|CL
+# Class Name		Required Feat								Required Skill		Var. Min. Value
+CLASS:Warrior Arcanist	PREFEAT:3,TYPE.Spellcasting,TYPE.Magecraft,Weapon Focus	PRESKILL:1,Spellcraft=8	PREVARGTEQ:BAB,4
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Warrior Arcanist	STARTSKILLPTS:2+INT	CSKILL:Climb|Concentration|TYPE.Craft|Intimidate|Jump|Knowledge (Arcana)|TYPE.Profession|Ride|Spellcraft|Swim
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level					Use Spell List
+CLASS:Warrior Arcanist	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Warrior Arcanist|TL	SPELLLIST:1|Channeler
+###Block: Weapon and Armor Proficiencies
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																																							ABILITY:Special Ability|AUTOMATIC|Warrior Arcanist Weapon and Armor Proficiency
+1																																							ABILITY:Special Ability|AUTOMATIC|Armored Casting|Channeled Combat (Attack)
+2																							BONUS:ABILITYPOOL|Spell Pool|CL-1	BONUS:VAR|SpellEnergy|CL-1	BONUS:VAR|SpellcasterLvl|CL-1
+4																																							ABILITY:Special Ability|AUTOMATIC|Channeled Combat (AC)
+6																																							ABILITY:Special Ability|AUTOMATIC|Melee Caster
+8																																							ABILITY:Special Ability|AUTOMATIC|Channeled Combat (Damage)
+10																																							ABILITY:Special Ability|AUTOMATIC|Regenerative Strike
+
+# Class Name		Hit Dice	Type			Max Level	Base class as subclass?	Define				Combat bonus						Save bonus													Modify VAR
+CLASS:Whisper Adept	HD:8		TYPE:PC.Prestige	MAXLEVEL:10	ALLOWBASECLASS:YES	DEFINE:WhisperAdeptLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:SAVE|BASE.Will|(CL+1)/2+2	BONUS:VAR|WhisperAdeptLvl|CL
+# Class Name		Required Feat								Required Race		Required Skill									Required Text
+CLASS:Whisper Adept	PREFEAT:1,TYPE.Magecraft	PREFEAT:2,TYPE.Spellcasting	PRERACE:1,Elf%,Elfling	PRESKILL:3,Knowledge (Nature)=8,Knowledge (Spirits)=10,Survival=8	PRETEXT:The character must be in good standing with the Witch Queen.
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Whisper Adept	STARTSKILLPTS:4+INT	CSKILL:Concentration|TYPE.Craft|Handle Animal|Heal|TYPE.Knowledge|TYPE.Profession|Spellcraft|Survival
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook		Caster level				Use Spell List
+CLASS:Whisper Adept	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:NO	BONUS:CASTERLEVEL|Whisper Adept|TL	SPELLLIST:1|Channeler
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							BONUS:ABILITYPOOL|Spell Pool|CL	BONUS:VAR|SpellEnergy|CL	BONUS:VAR|SpellcasterLvl|CL	ABILITY:Special Ability|AUTOMATIC|Whisper Sense
+2																																							ABILITY:Special Ability|AUTOMATIC|Whisper Sense (+2 Initiative)
+3																																							ABILITY:Special Ability|AUTOMATIC|Fell Touch
+4																																							ABILITY:Special Ability|AUTOMATIC|Whisper Sense (Cannot Be Suprised)
+5																																							ABILITY:Special Ability|AUTOMATIC|Tree Meld
+6																																							ABILITY:Special Ability|AUTOMATIC|Whisper Sense (Clairaudience)
+7																																							ABILITY:Special Ability|AUTOMATIC|Strength Of The Wood
+8																																							ABILITY:Special Ability|AUTOMATIC|Whisper Sense (Clairvoyance)
+9																																							ABILITY:Special Ability|AUTOMATIC|Whisper's Ward
+10																																							ABILITY:Special Ability|AUTOMATIC|Whisper Sense (Commune With Nature)
+
+# Class Name		Output Name		Hit Dice	Type			Max Level	Define				Combat bonus						Save bonus													Modify VAR
+CLASS:Wizard (Midnight)	OUTPUTNAME:Wizard	HD:4		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:WizardMidnightLvl|0	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Reflex|CL/3	BONUS:SAVE|BASE.Will|(CL+1)/2+2	BONUS:VAR|WizardMidnightLvl|CL
+# Class Name		Required Feat														Required Skill						Req. Spell Type
+CLASS:Wizard (Midnight)	PREFEAT:1,TYPE.Metamagic	PREFEAT:1,TYPE.ItemCreation	PREFEAT:1,Magecraft (Hermetic)	PRESKILL:2,Knowledge (Arcana)=10,Spellcraft=10	PRESPELLTYPE:13,Arcane=1
+# Class Name		Skill Pts/Lvl	Class Skill
+CLASS:Wizard (Midnight)	STARTSKILLPTS:2	CSKILL:Concentration|TYPE.Craft|TYPE.Knowledge|TYPE.Profession|Spellcraft
+# Class Name		Spell Stat Bonus		Spell Type		Spellbook					Caster level					Use Spell List
+CLASS:Wizard (Midnight)	BONUSSPELLSTAT:NONE	SPELLTYPE:Arcane	SPELLBOOK:YES	SPELLBOOK:YES	BONUS:CASTERLEVEL|Wizard (Midnight)|TL	SPELLLIST:1|Channeler
+# CL bonus EPs.
+# CL Stacks with Channeler for advanced spells known
+# Lorebook stacks with Channeler
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																							BONUS:ABILITYPOOL|Spell Pool|CL	BONUS:VAR|SpellEnergy|CL	BONUS:VAR|SpellcasterLvl|CL									ABILITY:Special Ability|AUTOMATIC|Wizardcraft
+2																																															ABILITY:Special Ability|AUTOMATIC|Efficient Study
+3																																							ADD:FEAT|1|TYPE=ItemCreation,TYPE=Metamagic
+4																																							ADD:FEAT|1|TYPE=Spellcasting
+6																																							ADD:FEAT|1|TYPE=ItemCreation,TYPE=Metamagic
+7																																							ADD:FEAT|1|TYPE=Spellcasting
+9																																							ADD:FEAT|1|TYPE=ItemCreation,TYPE=Metamagic
+10																																							ADD:FEAT|1|TYPE=Spellcasting
+
+# Class Name		Hit Dice	Type			Max Level	Define			Combat bonus						Save bonus												Modify VAR
+CLASS:Wogren Rider	HD:8		TYPE:PC.Prestige	MAXLEVEL:10	DEFINE:WogrenRiderLvl|0	BONUS:COMBAT|BASEAB|CL/2|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Reflex|CL/2+2	BONUS:SAVE|BASE.Fortitude,BASE.Will|(CL+1)/3	BONUS:VAR|WogrenRiderLvl|CL
+# Class Name		Required Feat					Multiple Requirements													Required Skill			Required Text
+CLASS:Wogren Rider	PREFEAT:2,Mounted Combat,Mounted Archery	PREMULT:1,[PRERACE:1,Halfling],[PREMULT:2,[PRERACE:1,Elfling],[PRETEMPLATE:1,Raised On Plains]]	PRESKILL:2,Ride=8,Survival=4	PRETEXT:Must complete a quest given to them by the riders of their tribe.
+# Class Name		Skill Pts/Lvl		Class Skill
+CLASS:Wogren Rider	STARTSKILLPTS:4+INT	CSKILL:Climb|TYPE.Craft|Handle Animal|Heal|Hide|Jump|Listen|Move Silently|TYPE.Profession|Ride|Spot|Survival|Swim
+###Block: Weapon and Armor Proficiencies
+1:REPEATLEVEL:1	CAST:SpellCast0,SpellCast1,SpellCast2,SpellCast3,SpellCast4,SpellCast5,SpellCast6,SpellCast7,SpellCast8,SpellCast9
+1																																ABILITY:Special Ability|AUTOMATIC|Wogren Rider Weapon and Armor Proficiency
+1																																ABILITY:Special Ability|AUTOMATIC|Special Mount (Wogren Rider)|Coordinated Attack
+2																							BONUS:ABILITYPOOL|Worgen Rider Mounted Ability|CL/2
+3																																ABILITY:Special Ability|AUTOMATIC|Speed Mount
+5																																ABILITY:Special Ability|AUTOMATIC|Mounted Hide
+7																																ABILITY:Special Ability|AUTOMATIC|Wogren Dodge
+9																																ABILITY:Special Ability|AUTOMATIC|Wogren's Sight

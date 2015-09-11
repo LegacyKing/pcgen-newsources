@@ -1,0 +1,116 @@
+# CVS $Revision: $ $Author: $ dschofield Wed Sep  9 21:03:22 2015 -- reformated by PCGen PrettyLST v6.04.01
+#Original Entry By: Beaver and Tir Gwaith
+
+###BLOCK: New Skills
+# Skill Name					Key Stat	Untrained?		Exclusive?		Classes	Type						Source Page		Situational Skill																																																Ability																														Bonus to skill
+Profession (Soldier)				KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Wisdom.Profession
+Profession (Boater)				KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Wisdom.Profession
+Profession (Sailor)				KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Wisdom.Profession
+Profession (Herbalist)				KEYSTAT:WIS	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Wisdom.Profession
+Knowledge (Local (Central Erenland))	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Endless Ocean))		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Erethor))			KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Northern Marches))	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Northlands))		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Kaladrun Mountains))	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Icewall Mountains))	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Pale Ocean))		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Sea of Pelluria))		KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Local (Southern Erenland))	KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge.Local	SOURCEPAGE:p.119
+Knowledge (Spirits)				KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge		SOURCEPAGE:p.119																																																																																		BONUS:SKILL|Knowledge (Nature)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Spirits)=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Shadow)				KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:Intelligence.Knowledge		SOURCEPAGE:p.119	SITUATION:In the Central Erenland region|In the Endless Ocean region|In the Erethor region|In the Northern Marches region|In the Northlands region|In the Kaladrun Mountains region|In the Icewall Mountains region|In the Pale Ocean region|In the Sea of Pelluria region|In the Southern Erenland region
+Speak Language (High Elven)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Danisil))|Synergy Bonus (Speak Language (Trader's Tongue))|PRESKILL:1,Speak Language (High Elven)=2|PRECLASS:1,TYPE.Base=1
+Speak Language (Halfling)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Danisil))|Synergy Bonus (Speak Language (Trader's Tongue))|PRESKILL:1,Speak Language (Halfling)=2|PRECLASS:1,TYPE.Base=1
+Speak Language (Patrol Sign)					USEUNTRAINED:NO	EXCLUSIVE:YES	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Danisil)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Halfling))|PRESKILL:1,Speak Language (Danisil)=2|PRECLASS:1,TYPE.Base=1
+Speak Language (Jungle Mouth)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Old Dwarven)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Trader's Tongue))|PRESKILL:1,Speak Language (Old Dwarven)=2|PRECLASS:1,TYPE.Base=1
+Speak Language Clan Dialect (Thedron)			USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language Clan Dialect (Fodrin)			USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language Clan Dialect (Durgis)			USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language Clan Dialect (Gorand)			USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language Clan Dialect (Black Blood)			USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Trader's Tongue)				USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Norther)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Erenlander))|Synergy Bonus (Speak Language (Trader's Tongue))|PRESKILL:1,Speak Language (Norther)=2|PRECLASS:1,TYPE.Base=1
+Speak Language (Courtier)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Colonial)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Erenlander))|Synergy Bonus (Speak Language (Trader's Tongue))|PRESKILL:1,Speak Language (Colonial)=2|PRECLASS:1,TYPE.Base=1
+Speak Language (Erenlander)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language																																																							ABILITY:Internal|AUTOMATIC|Synergy Bonus (Speak Language (Trader's Tongue))|PRESKILL:1,Speak Language (Erenlander)=2|PRECLASS:1,TYPE.Base=1
+Speak Language (Orcish)						USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Black Tongue)					USEUNTRAINED:NO	EXCLUSIVE:NO	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Sylvan)						USEUNTRAINED:NO	EXCLUSIVE:YES	CLASSES:ALL	TYPE:None.Speak Language
+Speak Language (Sundered Tongue)				USEUNTRAINED:NO	EXCLUSIVE:YES	CLASSES:ALL	TYPE:None.Speak Language
+Literacy (High Elven)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Halfling)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Danisil)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Jungle Mouth)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Old Dwarven)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Trader's Tongue)					USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Norther)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Courtier)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Colonial)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+Literacy (Erenlander)						USEUNTRAINED:NO	EXCLUSIVE:NO			TYPE:None.Write Language
+
+###BLOCK: Mods
+# Skill Name						Key Stat	Untrained?		Exclusive?		Type					Visible	Source Page		Situational Skill																																																																																										Bonus to Situation																																		Bonus to skill
+Appraise.MOD																								SITUATION:In the Central Erenland region|In the Endless Ocean region|In the Erethor region|In the Northern Marches region|In the Northlands region|In the Kaladrun Mountains region|In the Icewall Mountains region|In the Pale Ocean region|In the Sea of Pelluria region|In the Southern Erenland region|Trading|Smuggling|Stonework or Metal Work
+Balance.MOD																									SITUATION:On mountainous terrain|When in trees
+Bluff.MOD																									SITUATION:The Shadow|Smuggling|In which verbal persuasion plays a role|When dealing with outsiders|Trading|When dealing with those of the opposite gender|Orcs|Sarcosans
+Climb.MOD																									SITUATION:On mountainous terrain|When in trees
+Concentration.MOD																								SITUATION:Horse|Wogren
+Craft (Alchemy).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Armorsmithing).MOD																						SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Bowmaking).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Blacksmithing).MOD																						SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Carpentry).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Leatherworking).MOD																						SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Painting).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Pottery).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Sculpting).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Shipmaking).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Stonemasonry).MOD																						SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Trapmaking).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Weaponsmithing).MOD																						SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Woodworking).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Craft (Untrained).MOD																							SITUATION:When At Sea|Non-metal or Non-wood|Stone or Metal
+Diplomacy.MOD																								SITUATION:Elves|The Shadow|Intelligent Plant Creatures|Elementals|In which verbal persuasion plays a role|When dealing with outsiders|Trading|Smuggling|When dealing with those of the opposite gender|Enemies of Izrador|Orcs|Wild Empathy (Horses)|Sarcosans
+Disguise.MOD																								SITUATION:Smuggling
+Forgery.MOD																									SITUATION:Smuggling|Trading
+Gather Information.MOD																							SITUATION:Smuggling|In which verbal persuasion plays a role|When dealing with outsiders|In a city|Trading|When dealing with those of the opposite gender|Orcs|Sarcosans
+Handle Animal.MOD																								SITUATION:Wogren
+Hide.MOD																									SITUATION:In Dark Areas|The Shadow|Tall Grass or Heavy Undergrowth
+Intimidate.MOD																								SITUATION:The Shadow|In which verbal persuasion plays a role|When dealing with outsiders|When dealing with those of the opposite gender|Sarcosans
+Jump.MOD
+Knowledge (History).MOD					KEYSTAT:INT	USEUNTRAINED:NO	EXCLUSIVE:NO	TYPE:Intelligence.Knowledge			SOURCEPAGE:p.119	SITUATION:On mountainous terrain
+Knowledge (Nature).MOD																							SITUATION:In the Central Erenland region|In the Endless Ocean region|In the Erethor region|In the Northern Marches region|In the Northlands region|In the Kaladrun Mountains region|In the Icewall Mountains region|In the Pale Ocean region|In the Sea of Pelluria region|In the Southern Erenland region|In the Subterranean Kaladruns sub-region|In the Surface Kaladruns sub-region|In the Caraheen sub-region|In the Aruun sub-region|In the Varadeen sub-region|In the Miraleen sub-region
+Perform (Untrained).MOD																							SITUATION:In which verbal persuasion plays a role|When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Act).MOD																								SITUATION:In which verbal persuasion plays a role|When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Comedy).MOD																							SITUATION:In which verbal persuasion plays a role|When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Dance).MOD																							SITUATION:In which verbal persuasion plays a role|Orcs|Sarcosans
+Perform (Keyboard Instruments).MOD																					SITUATION:When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Oratory).MOD																							SITUATION:In which verbal persuasion plays a role|When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Percussion Instruments).MOD																				SITUATION:When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (String Instruments).MOD																					SITUATION:When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Wind Instruments).MOD																					SITUATION:When dealing with those of the opposite gender|Orcs|Sarcosans
+Perform (Sing).MOD																							SITUATION:When dealing with those of the opposite gender|Orcs|Sarcosans
+Profession (Hunter).MOD																							SITUATION:When At Sea|Smuggling|Trading
+Profession (Miner).MOD																							SITUATION:When At Sea|Smuggling|Trading
+Profession (Siege Engineer).MOD																					SITUATION:When At Sea|Smuggling|Trading
+Profession (Soldier).MOD																						SITUATION:When At Sea|Smuggling|Trading
+Profession (Boater).MOD																							SITUATION:When At Sea|Smuggling|Trading
+Profession (Sailor).MOD																							SITUATION:When At Sea|Smuggling|Trading
+Ride.MOD																									SITUATION:Wogren
+Sense Motive.MOD																								SITUATION:The Shadow|Against Evil Creatures|Agents of Izrador
+Survival.MOD																								SITUATION:In the Central Erenland region|In the Endless Ocean region|In the Erethor region|In the Northern Marches region|In the Northlands region|In the Kaladrun Mountains region|In the Icewall Mountains region|In the Pale Ocean region|In the Sea of Pelluria region|In the Southern Erenland region|In the Subterranean Kaladruns sub-region|In the Surface Kaladruns sub-region|In the Caraheen sub-region|In the Aruun sub-region|In the Varadeen sub-region|In the Miraleen sub-region|On mountainous terrain|In cold environments|When Harvesting Herbs
+Hide.MOD																																																																																																																																																										BONUS:SKILL|Hide|-2|PRERACE:1,Human%	BONUS:SKILL|Hide|-4|PRERACE:1,Elf%,Halfling%	BONUS:SKILL|Hide|-8|PRERACE:1,Dwarf%,Dworg,Orc%	BONUS:SKILL|Hide|-4|PREEQUIPPRIMARY:1,TYPE=Weapon|!PREEQUIPPRIMARY:1,TYPE=Natural	BONUS:SKILL|Hide|-4|PREEQUIPSECONDARY:1,TYPE=Weapon|!PREEQUIPSECONDARY:1,TYPE=Natural	BONUS:SKILL|Hide|-10|PREEQUIPTWOWEAPON:1,TYPE=Weapon|!PREEQUIPTWOWEAPON:1,TYPE=Natural	BONUS:SKILL|Hide|-10|PREEQUIPBOTH:1,TYPE=Weapon|!PREEQUIPBOTH:1,TYPE=Natural
+Knowledge (Local (Central Erenland)).MOD																																																																																																																BONUS:SITUATION|Knowledge (Shadow)=In the Central Erenland region,Appraise=In the Central Erenland region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Central Erenland))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Endless Ocean)).MOD																																																																																																																BONUS:SITUATION|Knowledge (Shadow)=In the Endless Ocean region,Appraise=In the Endless Ocean region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Endless Ocean))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Erethor)).MOD																																																																																																																	BONUS:SITUATION|Knowledge (Shadow)=In the Erethor region,Appraise=In the Erethor region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Erethor))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Northern Marches)).MOD																																																																																																																BONUS:SITUATION|Knowledge (Shadow)=In the Northern Marches region,Appraise=In the Northern Marches region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Northern Marches))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Northlands)).MOD																																																																																																																	BONUS:SITUATION|Knowledge (Shadow)=In the Northlands region,Appraise=In the Northlands region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Northlands))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Kaladrun Mountains)).MOD																																																																																																															BONUS:SITUATION|Knowledge (Shadow)=In the Kaladrun Mountains region,Appraise=In the Kaladrun Mountains region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Kaladrun Mountains))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Icewall Mountains)).MOD																																																																																																																BONUS:SITUATION|Knowledge (Shadow)=In the Icewall Mountains region,Appraise=In the Icewall Mountains region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Icewall Mountains))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Pale Ocean)).MOD																																																																																																																	BONUS:SITUATION|Knowledge (Shadow)=In the Pale Ocean region,Appraise=In the Pale Ocean region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Pale Ocean))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Sea of Pelluria)).MOD																																																																																																																BONUS:SITUATION|Knowledge (Shadow)=In the Sea of Pelluria region,Appraise=In the Sea of Pelluria region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Sea of Pelluria))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Local (Southern Erenland)).MOD																																																																																																																BONUS:SITUATION|Knowledge (Shadow)=In the Southern Erenland region,Appraise=In the Southern Erenland region|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Local (Southern Erenland))=5|PRECLASS:1,TYPE.Base=1
+Knowledge (Nature).MOD																																																																																																																																																								BONUS:SKILL|Knowledge (Spirits)|SynergyBonus|TYPE=Synergy.STACK|PRESKILL:1,Knowledge (Nature)=5|PRECLASS:1,TYPE.Base=1
+Speak Language.MOD																		VISIBLE:EXPORT

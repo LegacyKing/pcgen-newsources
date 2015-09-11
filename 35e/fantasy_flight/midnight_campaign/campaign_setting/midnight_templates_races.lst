@@ -1,0 +1,55 @@
+# CVS $Revision: $ $Author: $ dschofield Wed Sep  9 21:03:22 2015 -- reformated by PCGen PrettyLST v6.04.01
+#Original Entry By: Beaver
+
+###Block: Dwarven clans
+# Template Name	Visible	Source Page		Bonus to skill rank																Choose												Subrace
+Clan Thedron	VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Thedron),Speak Language (Old Dwarven)|3	CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Clan Fodrin		VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Fodrin),Speak Language (Old Dwarven)|3		CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Clan Durgis		VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Durgis),Speak Language (Old Dwarven)|3		CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Clan Gorand		VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Gorand),Speak Language (Old Dwarven)|3		CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Clan Black Blood	VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Black Blood),Speak Language (Old Dwarven)|3	CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]	SUBRACE:Yes
+
+###Block: Dworg clans
+# Template Name		Visible	Source Page		Bonus to skill rank																							Choose													Subrace
+Dworg Clan Thedron	VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Thedron)|3	BONUS:SKILLRANK|Speak Language (Orcish),Speak Language (Old Dwarven)|1	CHOOSE:SKILL|NORANK[Speak Language (Trader's Tongue)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Dworg Clan Fodrin		VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Fodrin)|3	BONUS:SKILLRANK|Speak Language (Orcish),Speak Language (Old Dwarven)|1	CHOOSE:SKILL|NORANK[Speak Language (Trader's Tongue)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Dworg Clan Durgis		VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Durgis)|3	BONUS:SKILLRANK|Speak Language (Orcish),Speak Language (Old Dwarven)|1	CHOOSE:SKILL|NORANK[Speak Language (Trader's Tongue)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Dworg Clan Gorand		VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Gorand)|3	BONUS:SKILLRANK|Speak Language (Orcish),Speak Language (Old Dwarven)|1	CHOOSE:SKILL|NORANK[Speak Language (Trader's Tongue)|Speak Language Clan Dialect%]	SUBRACE:Yes
+Dworg Clan Black Blood	VISIBLE:NO	SOURCEPAGE:p.187	BONUS:SKILLRANK|LIST|3	BONUS:SKILLRANK|Speak Language Clan Dialect (Black Blood)|3	BONUS:SKILLRANK|Speak Language (Orcish),Speak Language (Old Dwarven)|1	CHOOSE:SKILL|NORANK[Speak Language (Trader's Tongue)|Speak Language Clan Dialect%]	SUBRACE:Yes
+
+
+###Block: Halfling cultures
+# Template Name	Visible	Source Page		Ability											Subrace
+Nomadic Halfling	VISIBLE:NO	SOURCEPAGE:p.46	ABILITY:Special Ability|AUTOMATIC|TYPE=NomadicHalflingRacialAbilities	SUBRACE:Yes
+Agrarian Halfling	VISIBLE:NO	SOURCEPAGE:p.46	ABILITY:Special Ability|AUTOMATIC|TYPE=AgrarianHalflingRacialAbilities	SUBRACE:Yes
+
+# dschofield - Raised among gnomes. Select does not work for CHOOSE:SKILL. Always returns 0 as of 6.04.1
+###Block:Dwarrow raisings
+# Template Name					Visible	Template				Source Page		Bonus to skill		Bonus to skill rank																									Choose												Selections	Favored Class		Ability											Change Weapon Prof. Category								Subrace
+Raised among Dwarves Clan Thedron		VISIBLE:NO						SOURCEPAGE:p.49					BONUS:SKILLRANK|Speak Language Clan Dialect (Thedron),Speak Language (Old Dwarven)|3	BONUS:SKILLRANK|Speak Language (Trader's Tongue)|2	BONUS:SKILLRANK|LIST|3	CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]			FAVOREDCLASS:Fighter	ABILITY:Special Ability|AUTOMATIC|TYPE=DwarfDwarrowRacialAbilities	CHANGEPROF:Waraxe (Dwarven),Urgosh (Dwarven),Urutuk Hatchet=Martial	SUBRACE:Yes
+Raised among Dwarves Clan Fodrin		VISIBLE:NO						SOURCEPAGE:p.49					BONUS:SKILLRANK|Speak Language Clan Dialect (Fodrin),Speak Language (Old Dwarven)|3	BONUS:SKILLRANK|Speak Language (Trader's Tongue)|2	BONUS:SKILLRANK|LIST|3		CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]			FAVOREDCLASS:Fighter	ABILITY:Special Ability|AUTOMATIC|TYPE=DwarfDwarrowRacialAbilities	CHANGEPROF:Waraxe (Dwarven),Urgosh (Dwarven),Urutuk Hatchet=Martial	SUBRACE:Yes
+Raised among Dwarves Clan Durgis		VISIBLE:NO						SOURCEPAGE:p.49					BONUS:SKILLRANK|Speak Language Clan Dialect (Durgis),Speak Language (Old Dwarven)|3	BONUS:SKILLRANK|Speak Language (Trader's Tongue)|2	BONUS:SKILLRANK|LIST|3		CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]			FAVOREDCLASS:Fighter	ABILITY:Special Ability|AUTOMATIC|TYPE=DwarfDwarrowRacialAbilities	CHANGEPROF:Waraxe (Dwarven),Urgosh (Dwarven),Urutuk Hatchet=Martial	SUBRACE:Yes
+Raised among Dwarves Clan Gorand		VISIBLE:NO						SOURCEPAGE:p.49					BONUS:SKILLRANK|Speak Language Clan Dialect (Gorand),Speak Language (Old Dwarven)|3	BONUS:SKILLRANK|Speak Language (Trader's Tongue)|2	BONUS:SKILLRANK|LIST|3		CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]			FAVOREDCLASS:Fighter	ABILITY:Special Ability|AUTOMATIC|TYPE=DwarfDwarrowRacialAbilities	CHANGEPROF:Waraxe (Dwarven),Urgosh (Dwarven),Urutuk Hatchet=Martial	SUBRACE:Yes
+Raised among Dwarves Clan Black Blood	VISIBLE:NO						SOURCEPAGE:p.49					BONUS:SKILLRANK|Speak Language Clan Dialect (Black Blood),Speak Language (Old Dwarven)|3	BONUS:SKILLRANK|Speak Language (Trader's Tongue)|2	BONUS:SKILLRANK|LIST|3	CHOOSE:SKILL|NORANK[Speak Language (Orcish)|Speak Language Clan Dialect%]			FAVOREDCLASS:Fighter	ABILITY:Special Ability|AUTOMATIC|TYPE=DwarfDwarrowRacialAbilities	CHANGEPROF:Waraxe (Dwarven),Urgosh (Dwarven),Urutuk Hatchet=Martial	SUBRACE:Yes
+Raised among Gnomes Clan Thedron		VISIBLE:NO	TEMPLATE:Any Bonus Language	SOURCEPAGE:p.48	BONUS:SKILL|%LIST|1	BONUS:SKILLRANK|Speak Language Clan Dialect (Thedron),Speak Language (Trader's Tongue)|3	BONUS:SKILLRANK|Speak Language (Old Dwarven)|2						CHOOSE:SKILL|NORANK[TYPE=Speak Language],!EXCLUSIVE					SELECT:2	FAVOREDCLASS:Rogue	ABILITY:Special Ability|AUTOMATIC|TYPE=GnomeDwarrowRacialAbilities	CHANGEPROF:Inutek,Crossbow (Hand)=Martial						SUBRACE:Yes
+Raised among Gnomes Clan Fodrin		VISIBLE:NO	TEMPLATE:Any Bonus Language	SOURCEPAGE:p.48	BONUS:SKILL|%LIST|1	BONUS:SKILLRANK|Speak Language Clan Dialect (Fodrin),Speak Language (Trader's Tongue)|3	BONUS:SKILLRANK|Speak Language (Old Dwarven)|2						CHOOSE:SKILL|NORANK[TYPE=Speak Language],!EXCLUSIVE					SELECT:2	FAVOREDCLASS:Rogue	ABILITY:Special Ability|AUTOMATIC|TYPE=GnomeDwarrowRacialAbilities	CHANGEPROF:Inutek,Crossbow (Hand)=Martial						SUBRACE:Yes
+Raised among Gnomes Clan Durgis		VISIBLE:NO	TEMPLATE:Any Bonus Language	SOURCEPAGE:p.48	BONUS:SKILL|%LIST|1	BONUS:SKILLRANK|Speak Language Clan Dialect (Durgis),Speak Language (Trader's Tongue)|3	BONUS:SKILLRANK|Speak Language (Old Dwarven)|2						CHOOSE:SKILL|NORANK[TYPE=Speak Language],!EXCLUSIVE					SELECT:2	FAVOREDCLASS:Rogue	ABILITY:Special Ability|AUTOMATIC|TYPE=GnomeDwarrowRacialAbilities	CHANGEPROF:Inutek,Crossbow (Hand)=Martial						SUBRACE:Yes
+Raised among Gnomes Clan Gorand		VISIBLE:NO	TEMPLATE:Any Bonus Language	SOURCEPAGE:p.48	BONUS:SKILL|%LIST|1	BONUS:SKILLRANK|Speak Language Clan Dialect (Gorand),Speak Language (Trader's Tongue)|3	BONUS:SKILLRANK|Speak Language (Old Dwarven)|2						CHOOSE:SKILL|NORANK[TYPE=Speak Language],!EXCLUSIVE					SELECT:2	FAVOREDCLASS:Rogue	ABILITY:Special Ability|AUTOMATIC|TYPE=GnomeDwarrowRacialAbilities	CHANGEPROF:Inutek,Crossbow (Hand)=Martial						SUBRACE:Yes
+Raised among Gnomes Clan Black Blood	VISIBLE:NO	TEMPLATE:Any Bonus Language	SOURCEPAGE:p.48	BONUS:SKILL|%LIST|1	BONUS:SKILLRANK|Speak Language Clan Dialect (Black Blood),Speak Language (Trader's Tongue)|3	BONUS:SKILLRANK|Speak Language (Old Dwarven)|2					CHOOSE:SKILL|NORANK[TYPE=Speak Language],!EXCLUSIVE					SELECT:2	FAVOREDCLASS:Rogue	ABILITY:Special Ability|AUTOMATIC|TYPE=GnomeDwarrowRacialAbilities	CHANGEPROF:Inutek,Crossbow (Hand)=Martial						SUBRACE:Yes
+
+###Block:Elfling raisings
+# Template Name	Visible	Source Page		Special ABility											Bonus to skill rank																					Choose																				Favored Class				Ability											Change Weapon Prof. Category
+Raised in Forests	VISIBLE:NO	SOURCEPAGE:p.32	SAB:May begin play with up to 10 doses of orcbane poison (at normal cost)	BONUS:SKILLRANK|Speak Language (Jungle Mouth)|3	BONUS:SKILLRANK|Speak Language (High Elven),Speak Language (Halfling)|2	BONUS:SKILLRANK|LIST|3	CHOOSE:SKILL|Speak Language (Colonial)|Speak Language (Erenlander)|Speak Language (Orcish)|Speak Language (Trader's Tongue)	FAVOREDCLASS:Wildlander			ABILITY:Special Ability|AUTOMATIC|TYPE=ElfElflingRacialAbilities		CHANGEPROF:Atharak,Sepi=Martial
+Raised on Plains	VISIBLE:NO	SOURCEPAGE:p.32	SAB:May begin play with an adult wogren mount (at normal cost)			BONUS:SKILLRANK|Speak Language (Erenlander),Speak Language (Halfling)|3	BONUS:SKILLRANK|Speak Language (Jungle Mouth)|2	BONUS:SKILLRANK|LIST|3	CHOOSE:SKILL|Speak Language (Colonial)|Speak Language (Orcish)|Speak Language (Trader's Tongue)						FAVOREDCLASS:HIGHESTLEVELCLASS	ABILITY:Special Ability|AUTOMATIC|TYPE=HalflingElflingRacialAbilities	CHANGEPROF:Atharak,Lance (Halfling)=Martial
+
+###Block:Sarcosan raisings
+# Template Name			Visible	Template										Source Page			Required Race					Bonus to skill								Bonus to skill rank			Choose								ADD:.CLEAR	Ability											Apply Kit			Clear Bonus Languages	Subrace		Main Race Type		Race Subtype
+Urban Sarcosan			VISIBLE:NO												SOURCEPAGE:p.37									BONUS:SKILL|Bluff,Diplomacy,Sense Motive|2|TYPE=Racial																		ABILITY:Special Ability|AUTOMATIC|Favored Region (Special)											SUBRACE:Yes
+Plains Sarcosan			VISIBLE:NO												SOURCEPAGE:p.37																																				ABILITY:Special Ability|AUTOMATIC|TYPE=SarcosanPlainsRacialAbilities									SUBRACE:Yes
+
+#BLOCK: Any language bonus
+Any Bonus Language		VISIBLE:NO																																	BONUS:SKILLRANK|LIST|3			CHOOSE:SKILL|NORANK[TYPE=Speak Language],!EXCLUSIVE
+
+#BLOCK: Modifications
+Raven Familiar Language.MOD	VISIBLE:NO												SOURCEPAGE:ClassesII																		BONUS:SKILLRANK|LIST|3|TYPE=Racial	CHOOSE:SKILL|NORANK[TYPE=Speak Language]			ADD:.CLEAR	ABILITY:Special Ability|AUTOMATIC|Speak One Language
+Awakened Animal.MOD				TEMPLATE:CHOOSE:Awakened Animal_Standard|Awakened Animal_Will					PRERACE:1,RACETYPE=Animal,TYPE=Animal																										ADD:.CLEAR													KIT:1|Awakened Animal	LANGBONUS:.CLEAR		SUBRACE:Awakened	RACETYPE:Magical Beast	RACESUBTYPE:Augmented Animal
